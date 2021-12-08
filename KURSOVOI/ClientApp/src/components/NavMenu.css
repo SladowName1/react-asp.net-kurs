@@ -1,0 +1,34 @@
+﻿a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+.search-input {
+  font-size: 14px;
+  color: #5a6674;
+  width: 195px;
+  height: 20px;
+  border-radius: 40px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  margin-top: 9px;
+}
+
+a{
+  color: black !important;
+  font-size: 20px;
+  font:bold;
+}

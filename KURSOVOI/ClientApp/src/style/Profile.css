@@ -1,0 +1,58 @@
+
+.container{
+    display: flex;
+}
+.password-container{
+    display: flex;
+    flex-direction: column;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    color:black;
+}
+.login{
+    padding:5px;
+}
+.email{
+    padding:5px;
+    display: flex;
+}
+.password-container{
+    padding:5px;
+}
+
+.con-ver-new-pass{
+    display: flex;
+}
+.con-new-pass{
+    display: flex;
+}
+
+
+.dropzone{
+    height: 200px;
+    width: 200px;
+    border: 2px dashed black;
+    display: flex;
+    font-size:  2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(180, 177, 177);
+}
+
+.email-value>input{
+    color: #5a6674;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+.profile-container{
+    width: 100%;
+}
+
+.container-to-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

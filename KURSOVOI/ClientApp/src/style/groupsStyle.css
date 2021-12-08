@@ -1,0 +1,33 @@
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image {
+  flex-basis: 30%;
+  padding: 30px;
+}
+
+.image-value {
+  padding-left: 50px;
+}
+.image-name {
+  text-align: center;
+  color: black;
+  font: bold;
+  font-size: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+    background: inherit;
+}

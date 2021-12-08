@@ -1,0 +1,11 @@
+.container-video{
+    width: 100%;
+}
+.my-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-video-in-page{
+    width: 30%;
+}

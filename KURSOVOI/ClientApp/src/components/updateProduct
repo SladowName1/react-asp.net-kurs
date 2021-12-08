@@ -1,0 +1,111 @@
+import React, { Component } from "react";
+import axios from "axios";
+import { Cloudinary } from "cloudinary-react";
+import {
+  Image,
+  Video,
+  Transformation,
+  CloudinaryContext,
+} from "cloudinary-react";
+import "../style/Product.css";
+import {
+  Collapse,
+  Container,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  NavItem,
+  NavLink,
+} from "reactstrap";
+import { Link } from "react-router-dom";
+
+export class UpdateProduct extends Component {
+  constructor(props) {
+    super(props);
+  }
+//   componentDidMount() {
+//     this.getProduct();
+//   }
+
+//   deleteProduct(id) {
+//     axios
+//       .post(`https://localhost:44314/record/deleteProduct?id=${id}`)
+//       .then((res) => {
+//         this.setState({ products: res.data });
+//         console.log(this.state.products);
+//       });
+//   }
+
+  ChangeName = (e) => {
+    this.state.product.name = e.target.value;
+    this.setState({ product: this.state.product });
+  };
+  render() {
+    if (this.state.product != null) {
+      if (this.props.account) {
+        if (this.props.account.role == "admin") {
+          return (
+            <div className="product-container">
+              <div className="product-name-like">
+                <NavLink tag={Link} to={`/`} className="text-dark">
+                  <div onClick={this.deleteProduct(`${this.state.product.id}`)}>
+                    Delete
+                  </div>
+                </NavLink>
+                <div className="product-name">
+                  <input
+                    value={this.state.product.name}
+                    onChange={this.ChangeName}
+                  >
+                    {this.state.product.name}
+                  </input>
+                </div>
+                <div className="product-like-container">
+                  <div onClick={this.ClickLike} className="product-like">
+                    <Image
+                      cloudName="dz3dswxup"
+                      publicId="heart_pkf87k"
+                      width="50px"
+                    />
+                  </div>
+                  <div className="product-like-number">
+                    <p>{this.state.product.numberOfLikes}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="product-video">
+                <Video
+                  cloudName="dz3dswxup"
+                  publicId={this.state.product.video}
+                  loading="video Load"
+                  width="100%"
+                  controls={true}
+                />
+              </div>
+              <div className="product-description">
+                {this.state.product.description}
+              </div>
+            </div>
+          );
+        }
+      }
+    }
+    return(
+        <div>
+            <h1>XD</h1>
+        </div>
+    )
+  }
+
+//   getProduct = () => {
+//     const queryParams = new URLSearchParams(window.location.search);
+//     const id = queryParams.get("id");
+//     axios
+//       .get(`https://localhost:44314/record/getOneProduct?id=${id}`)
+//       .then((res) => {
+//         this.setState({ product: res.data });
+//       });
+//   };
+}
+export default UpdateProduct;

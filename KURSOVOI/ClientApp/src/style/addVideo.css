@@ -1,0 +1,70 @@
+.dropzone{
+    height: 200px;
+    width: 100%;
+    border: 5px solid #BB4E90;
+    display: flex;
+    color:black;
+    font-size:  2rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: #E1E3E3;
+    align-items: center;
+}
+.name{
+    display: flex;
+}
+.name-value{
+    padding-left: 58px;
+}
+.name-value>input{
+    font-size: 14px;
+    color: #5a6674;
+    width: 195px;
+    height: 25px;
+    border-radius: 40px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+.description{
+    display: flex;
+}
+.type{
+    display: flex;
+}
+.type-value{
+    padding-left: 12px;
+}
+.my-container{
+    width: 100%;
+}
+.description-valu{
+    width: 100%;
+    padding-left: 20px;
+}
+.description-valu>textarea{
+    width: 100%;
+    height: 80px;
+    color: #5a6674;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+#select-id{
+    color: #5a6674;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+#select-id>option{
+    color: #5a6674;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+button{
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgb(0 0 0 / 15%);
+    background: #fff;
+    background-color: #BB4E75;
+}
